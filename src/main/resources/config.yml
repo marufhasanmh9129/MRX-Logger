@@ -1,0 +1,61 @@
+# MRX-Logger | Author: MARUF | License: MIT
+# Replace the token and channel IDs. Keep your bot token private.
+discord:
+  token: "ENTER YOUR DISCORD BOT TOKEN HERE"
+  channels:
+    all-activity: { enabled: true, id: "ENTER YOUR ACTIVITY CHANNEL ID" }
+    console: { enabled: true, id: "ENTER YOUR CONSOLE CHANNEL ID" }
+    player: { enabled: true, id: "" }
+    mob: { enabled: true, id: "" }
+    block: { enabled: true, id: "" }
+    combat: { enabled: true, id: "" }
+    death: { enabled: true, id: "" }
+    respawn: { enabled: true, id: "" }
+    inventory: { enabled: true, id: "" }
+    item: { enabled: true, id: "" }
+    movement: { enabled: true, id: "" }
+    chat: { enabled: true, id: "" }
+    commands: { enabled: true, id: "" }
+    food: { enabled: true, id: "" }
+    farming: { enabled: true, id: "" }
+    fishing: { enabled: true, id: "" }
+    crafting: { enabled: true, id: "" }
+    enchanting: { enabled: true, id: "" }
+    brewing: { enabled: true, id: "" }
+    vehicles: { enabled: true, id: "" }
+    world: { enabled: true, id: "" }
+    explosions: { enabled: true, id: "" }
+    projectiles: { enabled: true, id: "" }
+    pets: { enabled: true, id: "" }
+    advancements: { enabled: true, id: "" }
+    experience: { enabled: true, id: "" }
+    weather: { enabled: true, id: "" }
+    interactions: { enabled: true, id: "" }
+    redstone: { enabled: true, id: "" }
+    containers: { enabled: true, id: "" }
+    portals: { enabled: true, id: "" }
+    damage: { enabled: true, id: "" }
+    healing: { enabled: true, id: "" }
+    effects: { enabled: true, id: "" }
+    fire: { enabled: true, id: "" }
+    fluids: { enabled: true, id: "" }
+    raids: { enabled: true, id: "" }
+    villages: { enabled: true, id: "" }
+    spawners: { enabled: true, id: "" }
+    miscellaneous: { enabled: true, id: "" }
+activity:
+  enabled: true
+  use-embeds: false
+  timestamp-format: "yyyy-MM-dd HH:mm:ss"
+  player-movement: { enabled: true, interval-seconds: 5 }
+  entity-movement: { enabled: true, interval-seconds: 5 }
+console:
+  enabled: true
+  edit-existing-message: true
+  max-message-length: 1800
+  activity-filter: true
+security:
+  discord-command-enabled: true
+  require-admin-role: true
+  allowed-role-ids: []
+  audit-commands: true

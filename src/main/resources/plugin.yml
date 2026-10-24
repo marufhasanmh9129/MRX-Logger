@@ -1,0 +1,15 @@
+name: MRX-Logger
+version: 1.0.0
+main: com.mrx.logger.MRXLogger
+api-version: '1.21.11'
+author: MARUF
+website: https://example.invalid
+commands:
+  mrxlogger:
+    description: MRX-Logger administration commands
+    usage: /mrxlogger reload
+    permission: mrxlogger.reload
+permissions:
+  mrxlogger.reload:
+    description: Allows reloading MRX-Logger configuration
+    default: op
