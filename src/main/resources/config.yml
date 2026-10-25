@@ -1,0 +1,188 @@
+# MRX-Logger Configuration
+
+# Console logging
+console:
+  enabled: true
+  channel-id: "YOUR_CONSOLE_CHANNEL_ID"
+
+  message-editing:
+    enabled: true
+    max-message-length: 1800
+
+  activity-filter:
+    enabled: true
+
+# Discord bot token (keep this config private)
+DISCORD_TOKEN: "ENTER YOUR BOT TOKEN HERE"
+
+# Default activity channel
+activities:
+  enabled: true
+  channel-id: "YOUR_ACTIVITY_CHANNEL_ID"
+
+# Individual activity categories
+multiple-activities:
+  player:
+    enabled: true
+    channel-id: ""
+
+  mob:
+    enabled: true
+    channel-id: ""
+
+  block:
+    enabled: true
+    channel-id: ""
+
+  combat:
+    enabled: true
+    channel-id: ""
+
+  death:
+    enabled: true
+    channel-id: ""
+
+  respawn:
+    enabled: true
+    channel-id: ""
+
+  inventory:
+    enabled: true
+    channel-id: ""
+
+  items:
+    enabled: true
+    channel-id: ""
+
+  chat:
+    enabled: true
+    channel-id: ""
+
+  commands:
+    enabled: true
+    channel-id: ""
+
+  movement:
+    enabled: false
+    channel-id: ""
+
+  food:
+    enabled: true
+    channel-id: ""
+
+  farming:
+    enabled: true
+    channel-id: ""
+
+  fishing:
+    enabled: true
+    channel-id: ""
+
+  crafting:
+    enabled: true
+    channel-id: ""
+
+  enchanting:
+    enabled: true
+    channel-id: ""
+
+  brewing:
+    enabled: true
+    channel-id: ""
+
+  vehicles:
+    enabled: true
+    channel-id: ""
+
+  world:
+    enabled: true
+    channel-id: ""
+
+  explosions:
+    enabled: true
+    channel-id: ""
+
+  projectiles:
+    enabled: true
+    channel-id: ""
+
+  pets:
+    enabled: true
+    channel-id: ""
+
+  advancements:
+    enabled: true
+    channel-id: ""
+
+  experience:
+    enabled: true
+    channel-id: ""
+
+  weather:
+    enabled: true
+    channel-id: ""
+
+  interactions:
+    enabled: true
+    channel-id: ""
+
+  redstone:
+    enabled: true
+    channel-id: ""
+
+  containers:
+    enabled: true
+    channel-id: ""
+
+  portals:
+    enabled: true
+    channel-id: ""
+
+  damage:
+    enabled: true
+    channel-id: ""
+
+  healing:
+    enabled: true
+    channel-id: ""
+
+  effects:
+    enabled: true
+    channel-id: ""
+
+  fire:
+    enabled: true
+    channel-id: ""
+
+  fluids:
+    enabled: true
+    channel-id: ""
+
+  raids:
+    enabled: true
+    channel-id: ""
+
+  villages:
+    enabled: true
+    channel-id: ""
+
+  spawners:
+    enabled: true
+    channel-id: ""
+
+  miscellaneous:
+    enabled: true
+    channel-id: ""
+
+# General settings
+settings:
+  timestamp-format: "yyyy-MM-dd HH:mm:ss"
+  use-embeds: false
+
+  player-movement:
+    enabled: true
+    interval-seconds: 5
+
+  entity-movement:
+    enabled: true
+    interval-seconds: 5
