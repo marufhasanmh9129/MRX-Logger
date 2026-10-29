@@ -1,0 +1,16 @@
+.gradle/
+build/
+*.class
+plugins/
+discord-token.txt
+src/main/resources/discord-token.txt
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_ed25519
+credentials.json
+node_modules/
+.venv/
+__pycache__/

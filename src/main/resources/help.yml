@@ -1,0 +1,33 @@
+# MRX-Logger help file. Type help in the configured Discord console channel.
+discord-console: |-
+  MRX-Logger — Discord Console Help
+  Type a command in this channel without a leading slash.
+  Examples: list | say Hello | time set day | weather clear | gamemode survival Steve
+  Full console command passthrough is enabled: commands are not limited to a predefined allowlist.
+  For safety, only Discord server members with Administrator permission can execute commands.
+  Command output that is written to the server logger is echoed in Discord; other output remains in the console log channel.
+
+config-options: |-
+  console.enabled: Enable or disable Discord console logging.
+  console.channel-id: Discord text channel used for console messages and Discord commands.
+  console.message-editing.enabled: Edit the previous console message when possible.
+  console.message-editing.max-message-length: Maximum retained console text length.
+  console.activity-filter.enabled: Forward matching player activity console lines to the activity channel.
+  activities.enabled: Master switch for activity logs.
+  activities.channel-id: Default activity channel used when a category channel-id is blank.
+  multiple-activities.<category>.enabled: Enable or disable an activity category.
+  multiple-activities.<category>.channel-id: Optional category-specific channel ID; blank uses the default activity channel.
+  settings.timestamp-format: Java SimpleDateFormat pattern used for timestamps.
+  settings.use-embeds: Reserved setting; current messages use plain text.
+  settings.player-movement.enabled: Enable player movement logging.
+  settings.player-movement.interval-seconds: Minimum seconds between movement messages per player.
+  settings.entity-movement.enabled and settings.entity-movement.interval-seconds: Entity movement options reserved for supported event logging.
+  DISCORD_TOKEN: Discord bot token stored at the top level of config.yml. Keep config.yml private and never share the token.
+  Reload files with /mrxlogger reload. Token changes reconnect the Discord client.
+
+activity-categories: |-
+  player, mob, block, combat, death, respawn, inventory, items, item, chat, commands,
+  movement, food, farming, fishing, crafting, enchanting, brewing, vehicles, world,
+  explosions, projectiles, pets, advancements, experience, weather, interactions,
+  redstone, containers, portals, damage, healing, effects, fire, fluids, raids,
+  villages, spawners, miscellaneous

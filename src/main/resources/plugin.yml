@@ -1,0 +1,15 @@
+name: MRX-Logger
+version: 1.2.3
+main: com.mrx.logger.MRXLogger
+api-version: '1.18'
+author: MARUF
+description: Discord console and activity logger for Paper and Spigot 1.18.2+
+commands:
+  mrxlogger:
+    description: MRX-Logger administration commands
+    usage: /mrxlogger reload
+    permission: mrxlogger.reload
+permissions:
+  mrxlogger.reload:
+    description: Allows reloading MRX-Logger configuration
+    default: op

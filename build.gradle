@@ -1,0 +1,26 @@
+plugins { id 'java' }
+group = 'com.mrx'
+version = '1.2.3'
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(21) }
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.18.2-R0.1-SNAPSHOT'
+    implementation('net.dv8tion:JDA:5.2.2') { exclude module: 'opus-java' }
+}
+
+jar {
+    archiveFileName = 'MRX-Logger.jar'
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    manifest { attributes('Implementation-Title': 'MRX-Logger', 'Implementation-Version': project.version) }
+}
